@@ -1,3 +1,5 @@
+module.exports = function multiply(first, second) {
+
 ;(function (globalObj) {
     'use strict';
 
@@ -2040,6 +2042,5 @@
 })(this);
 
 
-module.exports = function multiply(first, second) {
   return new BigNumber(first).mul(second).toString().match(/\d.\d*/).toString().replace('.','');
 }
